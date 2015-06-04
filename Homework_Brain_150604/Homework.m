@@ -10,30 +10,29 @@
 #import "Homework.h"
 @implementation Homework
 
-- (int)calculateRandom {
-    
-    BOOL isFindValue = NO;
-    int aNum = 0;
-    int bNum = 0;
-    while (!isFindValue) {
-        aNum = arc4random() % 100 + 1;
-        bNum = arc4random() % 100 + 1;
-        
-        if (aNum > bNum) {
-            isFindValue = YES;
-        }
-    }
-    
-    return aNum, bNum;
-}
-- (void)methodA: (int)x andInteger:(int)y {
+//- (int)calculateRandom {
 
-    
+    //BOOL isFindValue = NO;
+    //int aNum = 0;
+    //int bNum = 0;
+    //while (!isFindValue) {
+        //aNum = arc4random() % 100 + 1;
+        //bNum = arc4random() % 100 + 1;
+
+        //if (aNum > bNum) {
+            //isFindValue = YES;
+        //}
+    //}
+
+    //return aNum, bNum;
+//}
+- (void)methodA: (int)x andInteger:(int)y {
     NSLog(@"The result is %d", (x * y));
+
 }
 
 - (void)methodB: (int)timeInput andString:(NSString *)stringInput {
-    
+
     for (int i = 0; i < timeInput; i++) {
         NSLog(@"%@", stringInput);
     }

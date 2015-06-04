@@ -13,9 +13,10 @@
 @interface Homework : NSObject
 {
 }
-- (void)calculateRandom;
+//- (void)calculateRandom;
 - (void)methodA: (int)x andInteger:(int)y;
 - (void)methodB: (int)timeInput andString:(NSString *)stringInput;
+
 @end
 
 #endif
