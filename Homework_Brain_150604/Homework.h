@@ -10,10 +10,8 @@
 #define Homework_Brain_150604_Homework_h
 #import <Foundation/Foundation.h>
 
-@interface Homework : NSObject
-{
-}
-//- (void)calculateRandom;
+@interface Homework : NSObject 
+
 - (void)methodA: (int)x andInteger:(int)y;
 - (void)methodB: (int)timeInput andString:(NSString *)stringInput;
 

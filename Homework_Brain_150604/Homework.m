@@ -8,34 +8,28 @@
 
 #import <Foundation/Foundation.h>
 #import "Homework.h"
+
 @implementation Homework
 
-//- (int)calculateRandom {
-
-    //BOOL isFindValue = NO;
-    //int aNum = 0;
-    //int bNum = 0;
-    //while (!isFindValue) {
-        //aNum = arc4random() % 100 + 1;
-        //bNum = arc4random() % 100 + 1;
-
-        //if (aNum > bNum) {
-            //isFindValue = YES;
-        //}
-    //}
-
-    //return aNum, bNum;
-//}
 - (void)methodA: (int)x andInteger:(int)y {
-    NSLog(@"The result is %d", (x * y));
-
+    
+    if (( x < 100 ) && ( y < 100 )) {
+        NSLog(@"The result is %d", (x * y));
+    }
+    else {
+        NSLog(@"Numbers doesn't lower than 100, Please Try again");
+    }
 }
 
 - (void)methodB: (int)timeInput andString:(NSString *)stringInput {
-
-    for (int i = 0; i < timeInput; i++) {
-        NSLog(@"%@", stringInput);
+    
+    if (( timeInput < 5 ) && ( timeInput >= 0 )) {
+        for (int i = 0; i < timeInput; i++) {
+            NSLog(@"%@", stringInput);
+        }
+    }
+    else {
+        NSLog(@"5 > timeInput > 0, Please Try again");
     }
 }
 @end
-#import "Homework.h"
